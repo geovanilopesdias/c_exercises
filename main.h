@@ -1,9 +1,12 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include "graph.h"
+#include "recursion_study.h"
 
 int main(void) {
-int num_linked_vertices = 5;  // Example number of linked vertices
+    compare_factorials();
+    int num_linked_vertices = 5;  // Example number of linked vertices
+
     struct Vertex *vertex = malloc(sizeof(struct Vertex));
     vertex -> linked_vertices = malloc(num_linked_vertices * sizeof(struct Vertex *));
 
